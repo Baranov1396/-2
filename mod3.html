@@ -1,0 +1,39 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проектирование и разработка интерактивного текста</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Проектирование и разработка интерактивного текста</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><button onclick="window.location.href='index.html'">Главная страница</button></a></li>
+                <li><a href="#modules"><button onclick="window.location.href='mod.html'">Обучающие модули</button></a></li>
+                <li><a href="#examples"><button onclick="window.location.href='mod2.html'">Примеры интерактивных текстов</button></a></li>
+                <li><a href="#help">Справка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="help">
+        <h2>Справка</h2>
+        <h3>Инструкции по использованию сайта</h3>
+        <p>Этот раздел предоставляет пошаговые инструкции о том, как перемещаться по сайту и эффективно использовать его функции. Например, он может объяснить, как искать модули, просматривать примеры и находить ответы на вопросы.</p>
+        <h3>FAQ</h3>
+        <div class="faq-item">
+            <h4 onclick="toggleFaqAnswer(this)">Что такое интерактивный текст?</h4>
+            <p class="faq-answer">Интерактивный текст включает элементы взаимодействия, такие как кнопки, ссылки и мультимедиа. Эти элементы улучшают восприятие и усвоение информации, делая текст более увлекательным и динамичным.</p>
+        </div>
+        <div class="faq-item">
+            <h4 onclick="toggleFaqAnswer(this)">Как начать изучение модулей?</h4>
+            <p class="faq-answer">Перейдите к разделу "Обучающие модули" на навигационной панели. Там вы найдете список доступных модулей. Выберите модуль, который вас интересует, и начните свое обучение.</p>
+        </div>
+        <h3>Контакты службы поддержки</h3>
+        <p>Если у вас есть вопросы, вы можете связаться с нашей службой поддержки по электронной почте: support@example.com.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page with Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Обучающие модули</h1>
+        <nav>
+              <ul>
+                <li><a href="#home"><button onclick="window.location.href='index.html'">Главная страница</button></a></li>
+                <li><a href="#modules">Обучающие модули</a></li>
+                <li><a href="#examples"><button onclick="window.location.href='mod2.html'">Примеры интерактивных текстов</button></a></li>
+                <li><a href="#help"><button onclick="window.location.href='mod3.html'">Справка</button></a></li>
+				<li><a href="#" onclick="clearResults()" class="clearResults">Очистить результаты</a></li>
+
+            </ul>
+        </nav>
+    </header>
+	
+	<section id="modules">
+        <h2>Обучающие модули</h2>
+        <article class="module">
+            <h3>Основы создания интерактивных текстов</h3>
+            <p>В этом разделе мы рассмотрим основные принципы создания интерактивного текста и пример их реализации.</p>
+            <button onclick="startQuiz()">Начать Викторину</button>
+        </article>
+    </section>
+	
+	    <section id="results">
+        <h3>(База данных) Результаты Викторины:</h3>
+        <div id="quizResults"></div>
+    </section>
+
+    <section id="modules">
+        <h2>Обучающие модули</h2>
+        
+        <article class="module">
+            <h3>Сделать текст красным</h3>
+            <button onclick="changeStyle('interactiveContentRed', 'color', 'red')">Сделать текст красным</button>
+            <div id="interactiveContentRed" style="display: block;">
+                <p>Этот текст станет красным при нажатии на кнопку.</p>
+            </div>
+            <div class="code-box">
+                <code>element.style.color = 'red';</code>
+            </div>
+        </article>
+        
+        <article class="module">
+            <h3>Сделать текст жирным</h3>
+            <button onclick="changeStyle('interactiveContentBold', 'fontWeight', 'bold')">Сделать текст жирным</button>
+            <div id="interactiveContentBold" style="display: block;">
+                <p>Этот текст станет жирным при нажатии на кнопку.</p>
+            </div>
+            <div class="code-box">
+                <code>element.style.fontWeight = 'bold';</code>
+            </div>
+        </article>
+
+        <article class="module">
+            <h3>Поменять текст</h3>
+            <button onclick="changeText('interactiveContentChange')">Поменять текст</button>
+            <div id="interactiveContentChange" style="display: block;">
+                <p>Этот текст изменится при нажатии на кнопку.</p>
+            </div>
+            <div class="code-box">
+                <code>element.innerText = 'Новый текст';</code>
+            </div>
+        </article>
+
+        <article class="module">
+            <h3>Сделать текст мигающим</h3>
+            <button onclick="toggleBlink('interactiveContentBlink')">Сделать текст мигающим</button>
+            <div id="interactiveContentBlink" style="display: block;">
+                <p>Этот текст будет мигать при нажатии на кнопку.</p>
+            </div>
+            <div class="code-box">
+                <code>@keyframes blink { 50% { opacity: 0; } } element.style.animation = 'blink 1s steps(1, start) infinite';</code>
+            </div>
+        </article>
+
+        <article class="module">
+            <h3>Телепортировать текст</h3>
+            <button onclick="teleportText('interactiveContentTeleport')">Телепортировать текст</button>
+            <div id="interactiveContentTeleport" style="display: block; position: relative;">
+                <p>Этот текст телепортируется при нажатии на кнопку.</p>
+            </div>
+            <div class="code-box">
+                <code>element.style.transform = 'translateX(100px)';</code>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Интерактивный текст</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

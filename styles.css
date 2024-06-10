@@ -1,0 +1,124 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+	background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul li a button:hover {
+    background-color: #45a049;
+}
+
+section#modules h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+article.module {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+article.module button {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #35424a;
+    color: white;
+    padding: 10px;
+    border: none;
+}	
+
+.clearResults {
+	background-color: #0014ab;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+	text-align: center;
+    z-index: 999;
+	bottom: 0;
+}
+
+.code-box {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre;
+}
+
+.quiz-container {
+    margin-top: 40px;
+}
+
+section {
+  padding: 20px;
+  margin: 10px 0;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+img {
+  object-fit: contain;
+}
+
+figcaption {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+  color: #35424a;
+}
+
+/* Blink animation */
+@keyframes blink {
+    50% { opacity: 0; }
+}		
